@@ -19,7 +19,8 @@ export class Login extends React.Component{
         this.state = {
             isLoggedIn: localStorage.getItem("isLoggedIn")
         }
-        this.changeIsLoggedIn = this.changeIsLoggedIn.bind(this);
+        localStorage.setItem("user","paocu");
+        localStorage.setItem("password","ieti21");
     }
 
     render(){
@@ -67,11 +68,6 @@ export class Login extends React.Component{
         );
     }
 
-    changeIsLoggedIn(){
-        this.setState({ isLoggedIn : true });
-        localStorage.setItem("isLoggedIn", true );
-    }
-
     handleOnChangeUser(event){
         this.setState({user : event.target.value});
     }
@@ -82,8 +78,12 @@ export class Login extends React.Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
+        console.log(localStorage.getItem("user") === this.state.user , localStorage.getItem("password") === this.state.password);
         if(localStorage.getItem("user") === this.state.user && localStorage.getItem("password") === this.state.password){
             this.props.changeIsLoggedIn();
+            console.log("cualqueir cosa");
+            window.location.href="/todo";
         }
     }
+
 }
