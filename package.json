@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
+    "firebase-ci": "^0.15.0",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-datepicker": "^1.6.0",
@@ -22,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "buildeploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [

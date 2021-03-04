@@ -1,3 +1,13 @@
+## Task Planner PWA
+
+Usuario: paocu
+Contraseña: ieti21
+
+## Firebase URL
+
+[Task Planner](https://task-planner-app-pc.web.app)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
